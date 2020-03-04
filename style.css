@@ -16,6 +16,20 @@ body {
     margin: -20px 0 50px;
 }
 
+.controls {
+    font-family: 'Montserrat', sans-serif;
+
+    display: flex;
+    font-size: 10px;
+}
+
+.radio {
+    flex: 1 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 img {
     width: 225px;
@@ -87,6 +101,7 @@ form {
 }
 
 input {
+
     background-color: #eee;
     border: none;
     padding: 10px 15px;
@@ -123,12 +138,49 @@ input {
     transform: translateX(100%);
 }
 
+.uploadpic {
+    width: 100%;
+    color: black;
+    border: #a085b1 solid 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 30px;
+
+    border-radius: 8px;
+    border: 1px solid #FF4B2B;
+
+
+}
+
+.sign-up-container .form-container {
+    position: absolute;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+
 .sign-up-container {
     left: 0;
     width: 50%;
     opacity: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    height: 500px;
     z-index: 1;
 }
+
+
+.sign-up-container input {
+    background-color: #eee;
+    border: none;
+    font-size: 15px;
+    padding: 6px 0px;
+    margin: 4px 0;
+    width: 100%;
+}
+
 
 .container.right-panel-active .sign-up-container {
     transform: translateX(100%);
@@ -235,6 +287,8 @@ input {
 }
 
 /*Responsive*/
+
+
 @media only screen and (min-width: 360px) and (min-height: 1366px) {
 
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
@@ -285,6 +339,60 @@ input {
     span {
         font-size: 12px;
     }
+
+    .controls {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        font-size: 15px;
+    }
+
+    .radio {
+        flex: 1 0 auto;
+        padding: 0 5px 0 -5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .uploadpic {
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+        color: black;
+        border: #a085b1 solid 2px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        margin-top: 15px;
+        border-radius: 20px;
+        border: 2px solid #FF4B2B;
+
+
+    }
+
+    .sign-up-container .form-container {
+        position: absolute;
+        margin-top: -20px;
+        height: 100%;
+        transition: all 0.6s ease-in-out;
+    }
+
+
+    .sign-up-container {
+        left: 0;
+        width: 50%;
+        opacity: 0;
+        height: 500px;
+        z-index: 1;
+    }
+
+    .sign-up-container input {
+        background-color: #eee;
+        border: none;
+        padding: 10px 15px;
+        margin: 10px 0;
+        width: 100%;
+    }
+
 
     a {
         color: #333;
@@ -345,11 +453,6 @@ input {
         width: 100%;
     }
 
-    #picOne {
-        margin-top: 50px;
-        margin-bottom: -40px;
-    }
-    
 
     .container {
         background-color: #fff;
@@ -459,6 +562,11 @@ input {
         width: 50%;
         transform: translateX(0);
         transition: transform 0.6s ease-in-out;
+    }
+
+    #picOne {
+        margin-top: 50px;
+        margin-bottom: -40px;
     }
 
     .overlay-left {
